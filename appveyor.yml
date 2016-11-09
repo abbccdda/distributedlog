@@ -2,7 +2,8 @@ install:
   - cmd: java -version
 
 test_script:
-  - mvn test
+  - mvn clean apache-rat:check
+  - mvn package
 
 build: off
 
